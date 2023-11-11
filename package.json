@@ -4,7 +4,7 @@
   "description": "A data integrator using Node.js with worker threads",
   "main": "src/main.js",
   "scripts": {
-    "start": "node src/main.js",
+    "start": "node -r dotenv/config src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/damiaoterto/node-js-data-integrator/issues"
   },
-  "homepage": "https://github.com/damiaoterto/node-js-data-integrator#readme"
+  "homepage": "https://github.com/damiaoterto/node-js-data-integrator#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
 }
