@@ -8,4 +8,4 @@ RUN npm install --only=production
 
 COPY . .
 
-CMD [ "node", "src/main.js" ]
+CMD [ "node", "-r", "dotenv/config", "src/main.js" ]
